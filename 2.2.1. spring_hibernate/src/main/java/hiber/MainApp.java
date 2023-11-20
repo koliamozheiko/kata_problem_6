@@ -34,9 +34,8 @@ public class MainApp {
          System.out.println("Email = "+user.getEmail());
          System.out.println();
       }
-      List<User> users1 = userService.getUsersByCar("BMW", 5);
+      System.out.println(userService.getUserByCar("BMW", 5));
 
-      users1.stream().forEach(n -> System.out.println(n));
 
       context.close();
    }
